@@ -16,6 +16,16 @@ public class NewSort {
         }
         System.out.println(impressao);
         
+        System.out.println("\nBubble: ");
+        Bubble bubble = new Bubble(valor);
+        bubble.Inicio();
+        bubble.Impressao();
+        
+        System.out.println("\nInsert: ");
+        Insert insert = new Insert(valor);
+        insert.Inicio();
+        insert.Impressao();
+        
         System.out.println("\nMerger: ");
         Merge merge = new Merge(valor);
         merge.Inicio();
@@ -30,6 +40,31 @@ public class NewSort {
         Select select = new Select(valor);
         select.Inicio();
         select.Impressao();
+        
+        System.out.println("\nHeap: ");
+        HeapSort heap = new HeapSort(valor);
+        heap.Inicio();
+        heap.Impressao();
+        
+        System.out.println("\nBucket: ");
+        Bucket bucket = new Bucket(valor);
+        bucket.Inicio();
+        bucket.Impressao();
+        
+        System.out.println("\nCount: ");
+        Count count = new Count(valor);
+        count.Inicio();
+        count.Impressao();
+        
+        System.out.println("\nRadix: ");
+        Radix radix = new Radix(valor);
+        radix.Inicio();
+        radix.Impressao();
+        
+        System.out.println("\nTim: ");
+        Tim tim = new Tim(valor);
+        tim.Inicio();
+        tim.Impressao();
     }
     
 }

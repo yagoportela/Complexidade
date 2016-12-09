@@ -1,7 +1,5 @@
 package newsort;
 
-import java.util.ArrayList;
-
 public class Tim {
 
     public int[] valor;
@@ -27,7 +25,7 @@ public class Tim {
         if (l > minrun) {
             int meio = (inicio + fim) / 2;
             timsort(inicio, meio, minrun);
-            timsort(meio + 1, fim, minrun);
+            timsort(meio , fim, minrun);
             MergeSort(inicio, fim, meio);
         } else {
             InsertSort(inicio, fim);

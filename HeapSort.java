@@ -22,7 +22,7 @@ public class HeapSort {
             HeapOrganiza(i, valor.length);
         }
         int n = valor.length;
-         for (int i = valor.length - 1; i > 0; i--) {
+        for (int i = valor.length - 1; i > 0; i--) {
             int aux = valor[i];
             valor[i] = valor[0];
             valor[0] = aux;
@@ -31,32 +31,28 @@ public class HeapSort {
     }
 
     public void HeapOrganiza(int pai, int fim) {
-        
+
         int max;
         int filho1 = pai * 2;
         int filho2 = pai * 2 + 1;
-        
-        if(filho1 < fim && valor[filho1] > valor[pai]){
+
+        if (filho1 < fim && valor[filho1] > valor[pai]) {
             max = filho1;
-        }else{
+        } else {
             max = pai;
         }
-        
-        if(filho2 < fim && valor[filho2] > valor[max]){
-                max = filho2;
+
+        if (filho2 < fim && valor[filho2] > valor[max]) {
+            max = filho2;
         }
-                
-        if(max != pai){
+
+        if (max != pai) {
             int aux = valor[pai];
             valor[pai] = valor[max];
             valor[max] = aux;
-            
+
             HeapOrganiza(max, fim);
         }
-    }
-
-    public void HeapSort(int posicao, int tamanhoVetor) {
-
     }
 
     public void Impressao() {
