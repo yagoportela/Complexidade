@@ -3,12 +3,10 @@ package newsort;
 public class Quick {
 
     public int[] valor;
-    int[] temporario;
 
     public Quick(int[] valor) {
 
         this.valor = new int[valor.length];
-        temporario = new int[valor.length];
 
         System.arraycopy(valor, 0, this.valor, 0, this.valor.length);
     }

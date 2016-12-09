@@ -3,12 +3,10 @@ package newsort;
 public class HeapSort {
 
     public int[] valor;
-    int[] temporario;
 
     public HeapSort(int[] valor) {
 
         this.valor = new int[valor.length];
-        temporario = new int[valor.length];
 
         System.arraycopy(valor, 0, this.valor, 0, this.valor.length);
     }

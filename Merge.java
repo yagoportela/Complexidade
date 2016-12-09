@@ -4,12 +4,10 @@ package newsort;
 public class Merge {
 
     public int[] valor;
-    int[] temporario;
 
     public Merge(int[] valor) {
 
         this.valor = new int[valor.length];
-        temporario = new int[valor.length];
 
         System.arraycopy(valor, 0, this.valor, 0, this.valor.length);
     }
