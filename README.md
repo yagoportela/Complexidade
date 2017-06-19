@@ -1,1 +1,1 @@
-# Modelos de complexidade utilizando a linguagem java
+# Modelos de algoritmos de ordenação (pota), utilizando a linguagem java.
